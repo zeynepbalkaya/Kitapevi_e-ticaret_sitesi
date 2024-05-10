@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+        <title>SÜTLAÇ KİTAP | Kitap Dükkanı</title>
+        <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <h2 class="title">Sütlaç Kitap</h2>
+            <ul class="menu">
+                <li ><a href="index.html">Anasayfa</a></li>
+                <li class="active"> <a href="book.html">Kitaplar</a></li>
+                <li><a href="hakkinda.html">Hakkımızda</a></li>
+            </ul>
+            <ul class="menu__icons">
+                <li><i class="bi bi-person"></i></li>
+                <li><i class="bi bi-search"></i></li>
+                <li class="basket__icon"><li class="basket__icon" onclick="toggleModal();"><i class="bi bi-bag"></i><span class="basket__count"></span></li>
+            </ul>
+
+        </nav>
+
+
+        <section class="store my-5">
+            <div class="filter__background"></div>
+            <ul class="filter">
+                <li class="active" >Tümü</li>
+                <li>Tarih</li>
+                <li>Roman</li>
+                <li>Finans</li>
+                <li>Çocuk</li>
+                <li>Kişisel Gelişim</li>
+                <li>Bilim</li>
+
+            </ul>
+            <div class="row ">
+                <div class="col-5 offset-2 my-5">
+                    <div class="row book__card">
+                    <div class="col-6">
+                    <img class="img-fluid shadow" src="assets/images/books/hayvan-ciftligi.jpg" width="258" height="400" >
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-between">
+                    <div class="book__detail">
+                        <span class="fos gray fs-5">George Orwell</span><br>
+                        <span class="fs-4 fw-bold">Hayvan Çiftliği</span><br>
+                        <span class="book__star-rate">
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <span class="gray">330 Yorum</span>
+                        </span>
+                    </div>
+                    <p class="book__description fos gray">
+                        "Hayvan Çiftliği George Orwell’in modern klasikler arasına girmiş ikinci ünlü romanı ve çarpıcı bir politik taşlamadır. Şimdiye kadar yazılmış en iyi sistem eleştirilerinden biri olan bu roman, özgürlük amaçlı bir devrimin nasıl tek adamlığa evrilebileceğini gözler önüne serer. George Orwell’in alegorisi, bugün özgürlüğün saldırıya uğradığı her durum ve yerde güncelliğini koruyor."</p>
+                    <div>
+                        <span class="black fw-bold fs-4 me-2">11.7₺</span>
+                        <span class="fs-4 fw-bold old__price"></span>
+                    </div>
+                    <button class="btn__purple">Sepete Ekle</button>
+                </div>
+                </div>
+            </div>
+            
+                <div class="col-5 my-5">
+                    <div class="row book__card">
+                    <div class="col-6">
+                    <img class="img-fluid shadow" src="assets/images/books/nutuk.jpg" width="258" height="400" >
+                </div>
+                <div class="col-6 d-flex flex-column justify-content-between">
+                    <div class="book__detail">
+                        <span class="fos gray fs-5">Mustafa Kemal Atatürk</span><br>
+                        <span class="fs-4 fw-bold">Nutuk</span><br>
+                        <span class="book__star-rate">
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill active"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <span class="gray">285 Yorum</span>
+                        </span>
+                    </div>
+                    <p class="book__description fos gray">"Ey Türk gençliği! Birinci görevin, Türk bağımsızlığını, Türk Cumhuriyeti'ni sonsuza kadar korumak ve savunmaktır."</p>
+                    <div>
+                        <span class="black fw-bold fs-4 me-2">42.25₺</span>
+                        <span class="fs-4 fw-bold old__price">54₺</span>
+                    </div>
+                    <button class="btn__purple">Sepete Ekle</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-5 offset-2 my-5">
+                <div class="row book__card">
+                <div class="col-6">
+                <img class="img-fluid shadow" src="assets/images/books/alayci-kus.jpg" width="258" height="400" >
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="book__detail">
+                    <span class="fos gray fs-5">Suzanne Collins</span><br>
+                    <span class="fs-4 fw-bold">Açlık Oyunları 3 - Alaycı Kuş</span><br>
+                    <span class="book__star-rate">
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="gray">560 Yorum</span>
+                    </span>
+                </div>
+                <p class="book__description fos gray">"Biz yanarsak, siz de bizimle yanacaksınız!"</p>
+                <div>
+                    <span class="black fw-bold fs-4 me-2">40.89₺</span>
+                    <span class="fs-4 fw-bold old__price"></span>
+                </div>
+                <button class="btn__purple">Sepete Ekle</button>
+            </div>
+            </div>
+        </div>
+        
+            <div class="col-5 my-5">
+                <div class="row book__card">
+                <div class="col-6">
+                <img class="img-fluid shadow" src="assets/images/books/hep-hayir-diyen-cocuk.jpg" width="258" height="400" >
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="book__detail">
+                    <span class="fos gray fs-5">Charlie Griffin</span><br>
+                    <span class="fs-4 fw-bold">Hep Hayır! Diyen Çocuk</span><br>
+                    <span class="book__star-rate">
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill active"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <span class="gray">410 Yorum</span>
+                    </span>
+                </div>
+                <p class="book__description fos gray">"Hep 'Hayır!' Diyen Çocuk Kurallardan pek hoşlanmayan Berk, bir gün her şeye Hayır! demeye başladı. Kalkıp giyinmeye Hayır! Banyo keyfine Hayır! Güzel yiyeceklere Hayır! Annesinin aklına bir fikir geldi. Bakalım hep Hayır! Diyen Berk'i ikna edebilecek mi?"</p>
+                <div>
+                    <span class="black fw-bold fs-4 me-2">9.99₺</span>
+                    <span class="fs-4 fw-bold old__price">14.5₺</span>
+                </div>
+                <button class="btn__purple">Sepete Ekle</button>
+            </div>
+            </div>
+        </div>
+<div class="col-5 offset-2 my-5">
+    <div class="row book__card">
+    <div class="col-6">
+    <img class="img-fluid shadow" src="assets/images/books/zengin-baba-yoksul-baba.jpg" width="258" height="400" >
+</div>
+<div class="col-6 d-flex flex-column justify-content-between">
+    <div class="book__detail">
+        <span class="fos gray fs-5">Robert T. Kiyosaki</span><br>
+        <span class="fs-4 fw-bold">Zengin Baba Yoksul Baba</span><br>
+        <span class="book__star-rate">
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill"></i>
+        <span class="gray">130Yorum</span>
+        </span>
+    </div>
+    <p class="book__description fos gray">"Bize okul sistemlerinin parayla ilgili öğrettiklerine neden güvenmememiz gerektiğini hatırlatır ve bu önemli yeteneğin neden bugün hiç olmadığı kadar önemli olduğunu açıklar.Çocuklarınıza paraya dair neler öğretmeniz gerektiğini açıklar, böylece onlar da günümüz dünyasının zorluklarına ve fırsatlarına kendilerini hazırlayabilir ve hak ettikleri zengin yaşamı sürebilir."</p>
+    <div>
+        <span class="black fw-bold fs-4 me-2">44.9₺</span>
+        <span class="fs-4 fw-bold old__price"></span>
+    </div>
+    <button class="btn__purple">Sepete Ekle</button>
+</div>
+</div>
+</div>
+
+<div class="col-5 my-5">
+    <div class="row book__card">
+    <div class="col-6">
+    <img class="img-fluid shadow" src="assets/images/books/avucunuzdaki-kelebek.jpg" width="258" height="400" >
+</div>
+<div class="col-6 d-flex flex-column justify-content-between">
+    <div class="book__detail">
+        <span class="fos gray fs-5">Ahmet Şerif İzgören</span><br>
+        <span class="fs-4 fw-bold">Avcunuzdaki Kelebek</span><br>
+        <span class="book__star-rate">
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill"></i>
+        <span class="gray">145 Yorum</span>
+        </span>
+    </div>
+    <p class="book__description fos gray">"Tebrikler! Çok net başka bir şey söylemem mümkün değil. Sanırım hızlı okuma rekoru kırmış olabilirim. Bu kadar duygu yüklü, bu kadar gerçekleri gözler önüne serebilen, hala umut olabileceğine dair bu kadar mesaj bir arada nasıl verilir, gerçekten tebrikler"</p>
+    <div>
+        <span class="black fw-bold fs-4 me-2">22.99₺</span>
+        <span class="fs-4 fw-bold old__price"></span>
+    </div>
+    <button class="btn__purple">Sepete Ekle</button>
+</div>
+</div>
+</div>
+<div class="col-5 offset-2 my-5">
+    <div class="row book__card">
+    <div class="col-6">
+    <img class="img-fluid shadow" src="assets/images/books/savas-ve-baris.jpg" width="258" height="400" >
+</div>
+<div class="col-6 d-flex flex-column justify-content-between">
+    <div class="book__detail">
+        <span class="fos gray fs-5">Tolstoy</span><br>
+        <span class="fs-4 fw-bold">Savaş ve Barış</span><br>
+        <span class="book__star-rate">
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill"></i>
+        <span class="gray">930 Yorum</span>
+        </span>
+    </div>
+    <p class="book__description fos gray">"Eğer herkes sadece kendi inanışları için savaşsaydı, savaş olmazdı..."</p>
+    <div>
+        <span class="black fw-bold fs-4 me-2">24.6₺</span>
+        <span class="fs-4 fw-bold old__price"></span>
+    </div>
+    <button class="btn__purple">Sepete Ekle</button>
+</div>
+</div>
+</div>
+
+<div class="col-5 my-5">
+    <div class="row book__card">
+    <div class="col-6">
+    <img class="img-fluid shadow" src="assets/images/books/insan-gelecegini-nasil-kurar.jpg" width="258" height="400" >
+</div>
+<div class="col-6 d-flex flex-column justify-content-between">
+    <div class="book__detail">
+        <span class="fos gray fs-5">İlber Ortaylı</span><br>
+        <span class="fs-4 fw-bold">İnsan Geleceğini Nasıl Kurar?</span><br>
+        <span class="book__star-rate">
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <i class="bi bi-star-fill active"></i>
+        <span class="gray">250 Yorum</span>
+        </span>
+    </div>
+    <p class="book__description fos gray">"İnsan Geleceğini Nasıl Kurar? yaşam tecrübesini paylaşmayı vazife bilen bir entelektüelden, İlber Hoca’dan, okurlar için bir yol açma, yol yapma, kendini inşa etme ve toplumu ayağa kaldırma rehberi. Platon, Seneca, Cicero, Farabi gibi bilgelerin ilhamı eşliğinde ve Yenal Bilgici’nin sorularıyla…"</p>
+    <div>
+        <span class="black fw-bold fs-4 me-2">34.99₺</span>
+        <span class="fs-4 fw-bold old__price">47.49₺</span>
+    </div>
+    <button class="btn__purple">Sepete Ekle</button>
+</div>
+</div>
+</div>
+
+            </div>
+            
+            
+        </section>
+        <div class="basket__modal">
+            <div class="basket__items">
+                <i class="bi bi-x" onclick="toggleModal()"></i>
+                <h2 class="basket__title">Sepetindekiler</h2>
+                <ul class="basket__list">
+                <p>sepetinizde ürün bulunmamaktadır</p>
+
+                </ul>
+                <div class="basket__total">
+                    <span class="fw-bold mb-3 fs-4">Toplam: - </span>
+                    <button class="btn__purple">Sepeti Onayla</button>
+                </div>
+            </div>
+        </div>
+       
+        <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./assets/jquery/jquery.min.js"></script>
+          <script src="./assets/toastr/toastr.min.js"></script>
+          <script type="text/javascript" src="app.js"></script>
+          
+       
+
+    </body>
+</html>
